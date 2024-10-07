@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">pppb_uts</string>
+    <string name="bio">“You might not think that programmers are artists, but programming is an extremely creative profession. It’s logic-based creativity.” – John Romero 💻</string>
+    <string name="fufupost"><font textStyle="bold">Fufufafa</font> <font color="">#Proud</font></string>
+    <string name="assetspost"><font textStyle="bold">Assets UGM</font> <font color="">#Proud</font></string>
+    <string name="ligapost"><font textStyle="bold">LigaTRPL</font> <font color="">#Proud</font></string>
+    <string name="user_assets">assets_ugm</string>
+</resources>

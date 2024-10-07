@@ -1,0 +1,281 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:backgroundTint="@color/white"
+    tools:context=".SecondActivity">
+
+    <ImageView
+        android:id="@+id/back_icon"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:src="@drawable/ic_arrow_back"
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="15dp"/>
+
+    <TextView
+        android:id="@+id/username_atas"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="_iknip"
+        android:layout_alignTop="@id/back_icon"
+        android:layout_alignBottom="@id/back_icon"
+        android:layout_toEndOf="@id/back_icon"
+        android:layout_marginLeft="5dp"
+        android:textSize="20dp"
+        android:textColor="@color/black"/>
+
+    <ImageView
+        android:id="@+id/titik_tiga"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:src="@drawable/ic_titik_tiga"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="15dp"
+        android:layout_marginRight="15dp" />
+
+
+    <ImageView
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:src="@drawable/ic_bell"
+        android:layout_toStartOf="@id/titik_tiga"
+        android:layout_alignTop="@id/titik_tiga"
+        android:layout_alignBottom="@id/titik_tiga"
+        android:layout_marginRight="15dp"/>
+
+    <ImageView
+        android:id="@+id/pp"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/pp"
+        android:layout_below="@id/back_icon"
+        android:layout_marginTop="25dp"
+        android:layout_marginLeft="30dp" />
+
+    <TextView
+        android:id="@+id/num_post"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="6956"
+        android:textStyle="bold"
+        android:textSize="20dp"
+        android:textColor="@color/black"
+        android:layout_toRightOf="@id/pp"
+        android:layout_alignTop="@id/pp"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="35dp" />
+
+    <TextView
+        android:id="@+id/num_pengikut"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="27,7jt"
+        android:textStyle="bold"
+        android:textSize="20dp"
+        android:textColor="@color/black"
+        android:layout_toRightOf="@id/num_post"
+        android:layout_alignTop="@id/pp"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="25dp" />
+
+    <TextView
+        android:id="@+id/num_mengikuti"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="219"
+        android:textStyle="bold"
+        android:textSize="20dp"
+        android:textColor="@color/black"
+        android:layout_toRightOf="@id/num_pengikut"
+        android:layout_alignTop="@id/pp"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="35dp" />
+
+    <TextView
+        android:id="@+id/txt_post"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Postingan"
+        android:textSize="13dp"
+        android:textColor="@color/black"
+        android:layout_below="@id/num_post"
+        android:layout_toRightOf="@id/pp"
+        android:layout_alignLeft="@id/num_post"
+        android:layout_marginLeft="-3dp"
+        />
+    <TextView
+        android:id="@+id/txt_pengikut"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Pengikut"
+        android:textSize="13dp"
+        android:textColor="@color/black"
+        android:layout_below="@id/num_pengikut"
+        android:layout_toRightOf="@id/txt_post"
+        android:layout_alignLeft="@id/num_pengikut"
+        />
+    <TextView
+        android:id="@+id/txt_mengikuti"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Mengikuti"
+        android:textSize="13dp"
+        android:textColor="@color/black"
+        android:layout_below="@id/num_mengikuti"
+        android:layout_toRightOf="@id/txt_pengikut"
+        android:layout_alignLeft="@id/num_mengikuti"
+        android:layout_marginLeft="-7dp"
+        />
+
+
+    <TextView
+        android:id="@+id/fullname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ikhwan Hanipp"
+        android:textStyle="bold"
+        android:layout_below="@id/pp"
+        android:layout_alignLeft="@id/pp"
+        android:layout_marginTop="20dp"
+        android:textColor="@color/black"
+        android:textSize="15dp" />
+
+    <TextView
+        android:id="@+id/txt_programmer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Programmer"
+        android:textColor="#9A9A9A"
+        android:layout_below="@id/fullname"
+        android:layout_alignLeft="@id/fullname"
+        android:layout_marginTop="1dp" />
+
+    <TextView
+        android:id="@+id/bio"
+        android:layout_width="340dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txt_programmer"
+        android:layout_alignLeft="@id/txt_programmer"
+        android:layout_marginLeft="0dp"
+        android:layout_marginTop="-1dp"
+        android:text="@string/bio"
+        android:textSize="15dp" />
+
+    <Button
+        android:id="@+id/edit_profil"
+        android:layout_width="165dp"
+        android:layout_height="37dp"
+        android:backgroundTint="#EFEFEF"
+        android:layout_below="@id/bio"
+        android:layout_marginTop="5dp"
+        android:layout_alignLeft="@id/bio"
+
+        android:layout_marginRight="10dp"
+        android:textSize="13dp"
+        android:text="Edit profil"
+        android:textColor="@color/black"/>
+    <Button
+        android:id="@+id/bagikan_profil"
+        android:layout_width="165dp"
+        android:layout_height="37dp"
+        android:backgroundTint="#EFEFEF"
+        android:layout_below="@id/bio"
+        android:layout_marginTop="5dp"
+        android:layout_alignRight="@id/bio"
+
+        android:textSize="13dp"
+        android:text="Bagikan profil"
+        android:textStyle="normal"
+        android:textColor="@color/black"/>
+
+    <ImageView
+        android:id="@+id/feed_icon"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:src="@drawable/ic_feed"
+        android:layout_alignLeft="@id/edit_profil"
+        android:layout_below="@id/bagikan_profil"
+        android:layout_marginTop="15dp" />
+
+    <ImageView
+        android:id="@+id/reels"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:src="@drawable/ic_reels"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/bagikan_profil"
+        android:layout_marginTop="15dp" />
+
+    <ImageView
+        android:id="@+id/tag"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:src="@drawable/ic_tag"
+        android:layout_alignRight="@id/bagikan_profil"
+        android:layout_below="@id/bagikan_profil"
+        android:layout_marginTop="15dp" />
+
+    <ImageView
+        android:id="@+id/icon_home"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:src="@drawable/ic_home"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginBottom="20dp"
+        android:layout_marginLeft="15dp" />
+
+    <ImageView
+        android:id="@+id/icon_search"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:src="@drawable/ic_search"
+        android:layout_alignParentBottom="true"
+        android:layout_toRightOf="@id/icon_home"
+        android:layout_marginBottom="20dp"
+        android:layout_marginLeft="55dp" />
+
+    <ImageView
+        android:id="@+id/icon_add"
+        android:layout_width="27dp"
+        android:layout_height="27dp"
+        android:src="@drawable/ic_upload"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="20dp"
+        android:layout_marginLeft="50dp" />
+
+    <ImageView
+        android:id="@+id/icon_profile"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:src="@drawable/ic_profile_active"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="20dp"
+        android:layout_marginRight="20dp" />
+
+    <ImageView
+        android:id="@+id/icon_reels"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:src="@drawable/ic_reels"
+        android:layout_toLeftOf="@id/icon_profile"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="20dp"
+        android:layout_marginRight="55dp" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:backgroundTint="#EFEFEF"
+        android:layout_above="@id/icon_add"
+        android:layout_marginBottom="10dp" />
+
+
+</RelativeLayout>
